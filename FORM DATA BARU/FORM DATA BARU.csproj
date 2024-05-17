@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4E2B1D1-DCFF-4627-B5C4-E1C63289FC17}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FORM_DATA_BARU</RootNamespace>
+    <AssemblyName>FORM DATA BARU</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JadwalPelajaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JadwalPelajaran.Designer.cs">
+      <DependentUpon>JadwalPelajaran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnggotaBimbel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnggotaBimbel.Designer.cs">
+      <DependentUpon>AnggotaBimbel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAngsuran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataAngsuran.Designer.cs">
+      <DependentUpon>DataAngsuran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriAngsuran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriAngsuran.Designer.cs">
+      <DependentUpon>KategoriAngsuran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahAngsuran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahAngsuran.Designer.cs">
+      <DependentUpon>TambahAngsuran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoriAngsuran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoriAngsuran.Designer.cs">
+      <DependentUpon>HistoriAngsuran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JadwalPaten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JadwalPaten.Designer.cs">
+      <DependentUpon>JadwalPaten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardAdmin.Designer.cs">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardSiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardSiswa.Designer.cs">
+      <DependentUpon>DashboardSiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterData.Designer.cs">
+      <DependentUpon>MasterData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataAdmin.Designer.cs">
+      <DependentUpon>DataAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGuru.Designer.cs">
+      <DependentUpon>DataGuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSiswa.Designer.cs">
+      <DependentUpon>DataSiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataKelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataKelas.Designer.cs">
+      <DependentUpon>DataKelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPaketBimbel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPaketBimbel.Designer.cs">
+      <DependentUpon>DataPaketBimbel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JadwalPelajaran.resx">
+      <DependentUpon>JadwalPelajaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnggotaBimbel.resx">
+      <DependentUpon>AnggotaBimbel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataAngsuran.resx">
+      <DependentUpon>DataAngsuran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriAngsuran.resx">
+      <DependentUpon>KategoriAngsuran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahAngsuran.resx">
+      <DependentUpon>TambahAngsuran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoriAngsuran.resx">
+      <DependentUpon>HistoriAngsuran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JadwalPaten.resx">
+      <DependentUpon>JadwalPaten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardAdmin.resx">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardSiswa.resx">
+      <DependentUpon>DashboardSiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterData.resx">
+      <DependentUpon>MasterData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataAdmin.resx">
+      <DependentUpon>DataAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGuru.resx">
+      <DependentUpon>DataGuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSiswa.resx">
+      <DependentUpon>DataSiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataKelas.resx">
+      <DependentUpon>DataKelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPaketBimbel.resx">
+      <DependentUpon>DataPaketBimbel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dd3f2a8cc7429b64bbe49d29f749b213.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9fc2949d5d3425cb30ec5fdbc6957c17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9fc2949d5d3425cb30ec5fdbc6957c171.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
